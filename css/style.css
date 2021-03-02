@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  background-color: #e2e1e0; }
+
+.container {
+  width: 70%;
+  margin: 5rem auto;
+  padding: 5rem;
+  border-radius: 40px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column; }
+
+body {
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+.mdc-button span {
+  font-weight: bolder; }
+
+.mdc-button--outlined {
+  color: #FF9800; }
+
+.mdc-button--raised {
+  color: white; }
+
+.footer {
+  color: white;
+  font-size: 1.5em; }
+
+.legal {
+  padding: 2.5rem;
+  text-align: center; }
+
+.mdc-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  transition: background-color 0.5s, box-shadow 0.5s; }
+  .mdc-button:focus {
+    outline: none; }
+  .mdc-button--outlined {
+    border: 1px solid #ddd;
+    background-color: white; }
+    .mdc-button--outlined:hover {
+      background-color: #fff5e6; }
+    .mdc-button--outlined:active {
+      background-color: #ffeacc; }
+  .mdc-button--raised {
+    background-color: #FF9800;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    .mdc-button--raised:hover {
+      background-color: #ffb74d;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    .mdc-button--raised:active {
+      background-color: #ffc166; }
+
+.header {
+  height: 10em;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .header .logo {
+    width: 9%;
+    margin-left: 3rem;
+    margin-right: auto; }
+  .header .menu-box {
+    margin-right: 3rem;
+    display: flex;
+    justify-content: flex-end; }
+    .header .menu-box .mdc-button:not(:first-child) {
+      margin-left: 0.6em; }
+
+.main {
+  background-color: blue; }
+
+.footer {
+  background-color: #FF9800;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
