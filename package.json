@@ -4,7 +4,7 @@
   "description": "",
   "main": "js/script.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.sass css/style.css -w",
+    "watch:sass": "sass --watch sass/main.sass css/style.css",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass"
   },
