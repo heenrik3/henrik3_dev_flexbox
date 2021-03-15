@@ -1,10 +1,8 @@
 .section
   &:first-child
-    margin-top: 10em
+    margin-top: 2em
   &:not(:last-child)
-    margin-bottom: 50em
-
-  display: flex
+    margin-bottom: 30em
 
   &__box
     width: 100%
@@ -16,12 +14,23 @@
     align-items: center
     flex-direction: column
 
-  &__skills
+  &__profile-picture
+    width: 35em
+    margin-bottom: 3em
+    border: 1rem solid $text-color
+    border-radius: 50%
 
+  &__skills
     display: flex
+    flex-wrap: wrap
     flex-direction: row
     justify-content: space-around
+    align-items: center
 
     & .mdc-chips
-      margin-left: 1rem
-      margin-right: 1rem
+      margin-bottom: 1.5rem
+
+      &:not(:first-child)
+        margin-left: 1rem
+      &:not(:last-child)
+        margin-right: 1rem
