@@ -27,7 +27,7 @@ body {
 }
 
 body {
-  color: #449d48;
+  color: #262626;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
@@ -35,30 +35,41 @@ body {
 .mdc-button {
   font-size: 1.5rem;
 }
-.mdc-button span {
+.mdc-button__label {
   font-weight: bolder;
 }
 .mdc-button--outlined {
-  color: #4CAF50;
+  color: #333333;
 }
 .mdc-button--raised {
   color: white;
 }
 
+.mdc-chips {
+  font-size: 1.5rem;
+}
+
 .heading-primary {
-  font-size: 10rem;
+  font-size: 15rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.1;
+  letter-spacing: 0.3rem;
 }
 
 .heading-secondary {
   font-size: 5rem;
   font-weight: 400;
+  letter-spacing: 0.3rem;
 }
 
-.section__box--title {
-  font-size: 3rem;
-  font-weight: 300;
+.section__title {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+}
+.section__skills--title {
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .footer {
@@ -86,21 +97,31 @@ body {
   background-color: white;
 }
 .mdc-button--outlined:hover {
-  background-color: #eaf6eb;
+  background-color: #a6a6a6;
 }
 .mdc-button--outlined:active {
-  background-color: #d9eeda;
+  background-color: #999999;
 }
 .mdc-button--raised {
-  background-color: #4CAF50;
+  background-color: #333333;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .mdc-button--raised:hover {
-  background-color: #80c883;
+  background-color: #595959;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .mdc-button--raised:active {
-  background-color: #92cf94;
+  background-color: #666666;
+}
+
+.mdc-chips {
+  height: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2rem;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
 }
 
 .header {
@@ -109,15 +130,15 @@ body {
   display: flex;
   align-items: center;
 }
-.header .logo {
+.header__logo {
   width: 14em;
   margin-right: auto;
 }
-.header .menu-box {
+.header__menu-box {
   display: flex;
   justify-content: flex-end;
 }
-.header .menu-box .mdc-button:not(:first-child) {
+.header__menu-box .mdc-button:not(:first-child) {
   margin-left: 0.6em;
 }
 
@@ -135,18 +156,35 @@ body {
 
 .section {
   display: flex;
-  align-items: center;
+}
+.section:first-child {
+  margin-top: 10em;
 }
 .section:not(:last-child) {
-  margin-bottom: 10em;
+  margin-bottom: 50em;
 }
 .section__box {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
+.section__text-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section__skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.section__skills .mdc-chips {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
 .footer {
-  background-color: #4CAF50;
+  background-color: #333333;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -162,12 +200,6 @@ body {
 .skills {
   display: flex;
   flex-direction: column;
-}
-.skills--icon {
-  width: 1.75rem;
-  height: 1.75rem;
-  margin-right: 2rem;
-  fill: black;
 }
 
 /*# sourceMappingURL=style.css.map */

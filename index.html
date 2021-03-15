@@ -2,7 +2,7 @@
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>cv</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/script.js">
 
@@ -12,8 +12,8 @@
     <div class="container">
 
       <header class="header">
-        <img class="logo" alt="Henrik" src="img/logo_black.svg">
-        <div class="menu-box">
+        <img class="header__logo" alt="Henrik" src="img/logo_black.svg">
+        <div class="header__menu-box">
           <button class="mdc-button mdc-button--outlined">
             <span class="mdc-button__label">about</span>
           </button>
@@ -21,27 +21,35 @@
           <button class="mdc-button mdc-button--raised">
             <span class="mdc-button__label">contact</span>
           </button>
-
         </div>
       </header>
 
       <main class="main">
         <section class="section">
-          <div class="text-box">
-            <h1 class="heading-primary">Hello!</h1>
-            <h2 class="heading-secondary">Meet me</h2>
+          <div class="section__box">
+            <div class="section__text-box">
+              <h1 class="heading-primary">Hello!</h1>
+              <h2 class="heading-secondary">Meet me</h2>
+            </div>
           </div>
         </section>
         <section class="section">
           <div class="section__box">
-            <h2 class="section__box--title">What I do</h2>
-            <div class="section__box--skills">
+            <h2 class="section__title">What I do</h2>
+            <div class="section__skills">
               <!--
               <svg class="skills--icon">
                 <use xlink:href="img/sprites.svg#terminal"></use>
               </svg> -->
-
-              <span class="skills-title">Programming</span>
+              <div class="mdc-chips">
+                <span class="mdc-chips__label">Web Development</span>
+              </div>
+              <div class="mdc-chips">
+                <span class="mdc-chips__label">Mobile Development</span>
+              </div>
+              <div class="mdc-chips">
+                <span class="mdc-chips__label">Programming</span>
+              </div>
             </div>
           </div>
 
