@@ -13,7 +13,8 @@
   "dependencies": {
     "@material/card": "^10.0.0",
     "express": "^4.17.1",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.8"
   },
   "devDependencies": {
     "devserver": "^0.2.5",

@@ -18,6 +18,26 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 1800px) {
+  html {
+    font-size: 80%;
+  }
+}
 
 body {
   box-sizing: border-box;
@@ -134,8 +154,8 @@ body {
 .mdc-card__media--image {
   height: 100%;
   width: 100%;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
 }
 .mdc-card__primary-title {
   padding: 2.4rem 0;
@@ -157,7 +177,7 @@ body {
 }
 .mdc-card__actions {
   display: flex;
-  align-items: flex-start;
+  justify-content: flex-start;
 }
 .mdc-card__actions .mdc-button:not(:last-child) {
   margin-right: 0.8rem;
