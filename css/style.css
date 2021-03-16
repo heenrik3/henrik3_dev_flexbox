@@ -33,10 +33,9 @@ body {
 }
 
 .mdc-button {
-  font-size: 1.5rem;
-}
-.mdc-button__label {
-  font-weight: bolder;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.75px;
 }
 .mdc-button--outlined {
   color: #333333;
@@ -104,6 +103,7 @@ body {
   background-color: #999999;
 }
 .mdc-button--raised {
+  border: 1px solid transparent;
   background-color: #333333;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -113,6 +113,53 @@ body {
 }
 .mdc-button--raised:active {
   background-color: #666666;
+}
+
+.mdc-card {
+  width: 34.4rem;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+.mdc-card__body {
+  padding: 0 1.6rem 1.6rem;
+}
+.mdc-card__media {
+  width: 100%;
+  height: 19.4rem;
+}
+.mdc-card__media--image {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.mdc-card__primary-title {
+  padding: 2.4rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.mdc-card__primary-title--primary-text {
+  line-height: 1.2;
+  font-size: 2.5rem;
+}
+.mdc-card__primary-title--secondary-text {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1.4rem;
+  margin-top: 0.6rem;
+}
+.mdc-card__supporting-text {
+  padding-bottom: 1.6rem;
+  font-size: 1.4rem;
+}
+.mdc-card__actions {
+  display: flex;
+  align-items: flex-start;
+}
+.mdc-card__actions .mdc-button:not(:last-child) {
+  margin-right: 0.8rem;
 }
 
 .mdc-chips {
@@ -129,6 +176,7 @@ body {
   margin-bottom: 15em;
   display: flex;
   align-items: center;
+  background-color: #fafafa;
 }
 .header__logo {
   width: 14em;
@@ -180,17 +228,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
-.section__skills .mdc-chips {
+.section__skills .mdc-card {
   margin-bottom: 1.5rem;
-}
-.section__skills .mdc-chips:not(:first-child) {
-  margin-left: 1rem;
-}
-.section__skills .mdc-chips:not(:last-child) {
-  margin-right: 1rem;
 }
 
 .footer {
@@ -198,6 +240,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
