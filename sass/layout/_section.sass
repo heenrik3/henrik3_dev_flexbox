@@ -1,6 +1,6 @@
 .section
-  &:first-child
-    margin-top: 2em
+  width: 100%
+  
   &:not(:last-child)
     margin-bottom: 30em
 
@@ -22,15 +22,15 @@
 
   &__skills
     display: flex
-    flex-wrap: wrap
+    flex: 0 0 auto
     flex-direction: row
-    justify-content: space-between
+    justify-content: space-around
     align-items: center
 
     & .mdc-card
       margin-bottom: 1.5rem
 
-      //&:not(:first-child)
+      &:not(:first-child)
         margin-left: 1rem
-      //&:not(:last-child)
+      &:not(:last-child)
         margin-right: 1rem
