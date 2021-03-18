@@ -1,13 +1,12 @@
 .section
   width: 100%
-  
+
   &:not(:last-child)
     margin-bottom: 30em
 
   &__box
     width: 100%
-    display: flex
-    flex-direction: column
+
 
   &__text-box
     display: flex
@@ -21,11 +20,10 @@
     border-radius: 50%
 
   &__skills
-    display: flex
-    flex: 0 0 auto
-    flex-direction: row
-    justify-content: space-around
-    align-items: center
+    background-color: orangered
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 1rem
 
     & .mdc-card
       margin-bottom: 1.5rem

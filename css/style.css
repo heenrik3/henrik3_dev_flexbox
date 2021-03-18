@@ -210,7 +210,7 @@ body {
 }
 
 .container {
-  width: 60%;
+  width: 70%;
   margin: 5rem auto;
   padding: 8rem;
   border-radius: 40px;
@@ -237,8 +237,6 @@ body {
 }
 .section__box {
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 .section__text-box {
   display: flex;
@@ -252,11 +250,10 @@ body {
   border-radius: 50%;
 }
 .section__skills {
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  background-color: orangered;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
 }
 .section__skills .mdc-card {
   margin-bottom: 1.5rem;
