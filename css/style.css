@@ -53,7 +53,7 @@ body {
   letter-spacing: 0.75px;
 }
 .mdc-button--outlined {
-  color: #F2165C;
+  color: #333333;
 }
 .mdc-button--raised {
   color: white;
@@ -112,26 +112,25 @@ body {
   background-color: white;
 }
 .mdc-button--outlined:hover {
-  background-color: #feeff4;
+  background-color: #a6a6a6;
 }
 .mdc-button--outlined:active {
-  background-color: #fdd7e3;
+  background-color: #999999;
 }
 .mdc-button--raised {
   border: 1px solid transparent;
-  background-color: #F2165C;
+  background-color: #333333;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .mdc-button--raised:hover {
-  background-color: #f65e8f;
+  background-color: #595959;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .mdc-button--raised:active {
-  background-color: #f777a0;
+  background-color: #666666;
 }
 
 .mdc-card {
-  width: 34.4rem;
   background-color: white;
   border-radius: 4px;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
@@ -148,11 +147,11 @@ body {
 }
 .mdc-card__media {
   width: 100%;
-  height: 19.4rem;
+  height: 60%;
 }
 .mdc-card__media--image {
-  height: 100%;
   width: 100%;
+  height: 100%;
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
 }
@@ -250,13 +249,8 @@ body {
   border-radius: 50%;
 }
 .section__skills {
-  background-color: orangered;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-}
-.section__skills .mdc-card {
-  margin-bottom: 1.5rem;
 }
 .section__skills .mdc-card:not(:first-child) {
   margin-left: 1rem;
@@ -266,7 +260,7 @@ body {
 }
 
 .footer {
-  background-color: #F2165C;
+  background-color: #333333;
   display: flex;
   align-items: center;
   flex-direction: column;
