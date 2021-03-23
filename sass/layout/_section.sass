@@ -2,7 +2,7 @@
   width: 100%
 
   &:not(:last-child)
-    margin-bottom: 30em
+    margin-bottom: 20em
 
   &__box
     width: 100%
@@ -39,11 +39,17 @@
     align-self: center
 
   &__skills
-    //display: grid
-    //grid-template-columns: repeat(3, 1fr)
-    display: flex
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    grid-gap: 3rem
+  /*  display: flex
     justify-content: space-between
     flex: 1 0 auto
+    flex-grow: 0
+    overflow: auto
+
+
 
     & .mdc-card
       //margin-bottom: 1.5rem
@@ -52,6 +58,12 @@
         margin-left: 1rem
       &:not(:last-child)
         margin-right: 1rem
+
+  &__skills--2
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    grid-gap: 3rem
 
   &__chips-languages
     display: flex

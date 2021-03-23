@@ -53,7 +53,7 @@ body {
   letter-spacing: 0.75px;
 }
 .mdc-button--outlined {
-  color: #333333;
+  color: #F2165C;
 }
 .mdc-button--raised {
   color: white;
@@ -79,7 +79,7 @@ body {
 
 .section__title {
   font-size: 3.5rem;
-  font-weight: bolder;
+  font-weight: 300;
   margin-bottom: 2rem;
 }
 .section__skills--title {
@@ -90,6 +90,12 @@ body {
 .footer {
   color: white;
   font-size: 1.5em;
+}
+
+.darker-bg {
+  background-color: #f4f4f4;
+  border-radius: 40px;
+  padding: 5rem;
 }
 
 .legal {
@@ -112,69 +118,84 @@ body {
   background-color: white;
 }
 .mdc-button--outlined:hover {
-  background-color: #a6a6a6;
+  background-color: #feeff4;
 }
 .mdc-button--outlined:active {
-  background-color: #999999;
+  background-color: #fdd7e3;
 }
 .mdc-button--raised {
   border: 1px solid transparent;
-  background-color: #333333;
+  background-color: #F2165C;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .mdc-button--raised:hover {
-  background-color: #595959;
+  background-color: #f65e8f;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .mdc-button--raised:active {
-  background-color: #666666;
+  background-color: #f777a0;
 }
 
 .mdc-card {
-  width: 34.4rem;
-  background-color: white;
   border-radius: 0.4rem;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
-  flex-basis: auto;
+  align-self: baseline;
+  flex-wrap: wrap;
 }
-@media (max-width: 75em) {
-  .mdc-card {
-    width: 30.4rem;
-  }
+.mdc-card--raised {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-.mdc-card__body {
-  padding: 0 1.6rem 1.6rem;
+.mdc-card--raised:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.mdc-card--outlined {
+  box-shadow: 0;
+  border: 1px solid #e0e0e0;
 }
 .mdc-card__media {
   width: 100%;
-  height: 60%;
+  height: 18.4rem;
 }
 .mdc-card__media--image {
   width: 100%;
-  height: 19.4rem;
+  height: 100%;
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
 }
-.mdc-card__primary-title {
-  padding: 2.4rem 0;
-  display: flex;
-  flex-direction: column;
+.mdc-card__text-section {
+  padding: 1.6rem;
 }
-.mdc-card__primary-title--primary-text {
+.mdc-card__text-section__title {
+  font-size: 1.85rem;
+  line-height: 2.9rem;
   font-weight: 500;
-  line-height: 1.2;
-  font-size: 2.5rem;
+  letter-spacing: 0.0125em;
 }
-.mdc-card__primary-title--secondary-text {
-  color: rgba(0, 0, 0, 0.54);
-  font-size: 1.4rem;
-  margin-top: 0.6rem;
+.mdc-card__text-section__subhead {
+  font-size: 1.375rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 0.0178571429em;
+  opacity: 0.6;
 }
 .mdc-card__supporting-text {
+  padding-top: 2.4rem;
   padding-bottom: 1.6rem;
   font-size: 1.4rem;
+}
+.mdc-card__chips-section {
+  padding: 1.6rem;
+  display: flex;
+  overflow: auto;
+}
+.mdc-card__chips-section .mdc-chips {
+  color: #717171;
+  align-self: center;
+}
+.mdc-card__chips-section .mdc-chips:not(:last-child) {
+  margin-right: 1rem;
 }
 .mdc-card__actions {
   display: flex;
@@ -189,11 +210,21 @@ body {
   min-width: 6rem;
   padding: 0 1.2rem;
   border-radius: 2rem;
-  background-color: #e0e0e0;
+  background-color: #ebebeb;
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
+  transition: background-color 0.5s;
+}
+.mdc-chips:hover {
+  background-color: #dedede;
+}
+
+.mdc-divider {
+  width: 90%;
+  border-top: 1px solid #eee;
+  align-self: center;
 }
 
 .header {
@@ -236,9 +267,24 @@ body {
 
 .section {
   width: 100%;
+  /*  display: flex
+  * justify-content: space-between
+  * flex: 1 0 auto
+  * flex-grow: 0
+  * overflow: auto
+  *
+  *
+  *
+  * & .mdc-card
+  *  //margin-bottom: 1.5rem
+  *
+  *  &:not(:first-child)
+  *    margin-left: 1rem
+  *  &:not(:last-child)
+  *    margin-right: 1rem */
 }
 .section:not(:last-child) {
-  margin-bottom: 30em;
+  margin-bottom: 20em;
 }
 .section__box {
   width: 100%;
@@ -275,15 +321,16 @@ body {
   align-self: center;
 }
 .section__skills {
-  display: flex;
-  justify-content: space-between;
-  flex: 1 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3rem;
 }
-.section__skills .mdc-card:not(:first-child) {
-  margin-left: 1rem;
-}
-.section__skills .mdc-card:not(:last-child) {
-  margin-right: 1rem;
+.section__skills--2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3rem;
 }
 .section__chips-languages {
   display: flex;
@@ -292,12 +339,10 @@ body {
 }
 
 .footer {
-  background-color: #333333;
+  background-color: #F2165C;
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
