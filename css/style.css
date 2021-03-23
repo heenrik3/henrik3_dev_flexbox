@@ -73,7 +73,7 @@ body {
 .heading-secondary {
   text-transform: uppercase;
   font-size: 3rem;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 0.1rem;
 }
 
@@ -131,11 +131,13 @@ body {
 }
 
 .mdc-card {
+  width: 34.4rem;
   background-color: white;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
+  flex-basis: auto;
 }
 @media (max-width: 75em) {
   .mdc-card {
@@ -151,7 +153,7 @@ body {
 }
 .mdc-card__media--image {
   width: 100%;
-  height: 100%;
+  height: 19.4rem;
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
 }
@@ -161,6 +163,7 @@ body {
   flex-direction: column;
 }
 .mdc-card__primary-title--primary-text {
+  font-weight: 500;
   line-height: 1.2;
   font-size: 2.5rem;
 }
@@ -182,11 +185,14 @@ body {
 }
 
 .mdc-chips {
-  padding: 1rem 1.5rem;
+  height: 3.2rem;
+  min-width: 6rem;
+  padding: 0 1.2rem;
   border-radius: 2rem;
   background-color: #e0e0e0;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex: 0 0 auto;
 }
 
@@ -236,27 +242,53 @@ body {
 }
 .section__box {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section__box .heading-primary, .section__box .heading-secondary {
+  align-self: center;
+}
+.section__box .heading-secondary {
+  margin-top: 3rem;
 }
 .section__text-box {
+  align-self: center;
+  width: 70%;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 5rem;
+  background-color: #eee;
+  border-radius: 40px;
+  color: #333333;
+  font-size: 2rem;
+}
+.section__text-box--text {
+  text-align: center;
+  line-height: 1.5;
 }
 .section__profile-picture {
   width: 35em;
   margin-bottom: 3em;
   border: 1rem solid #333333;
   border-radius: 50%;
+  align-self: center;
 }
 .section__skills {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
+  flex: 1 0 auto;
 }
 .section__skills .mdc-card:not(:first-child) {
   margin-left: 1rem;
 }
 .section__skills .mdc-card:not(:last-child) {
   margin-right: 1rem;
+}
+.section__chips-languages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .footer {

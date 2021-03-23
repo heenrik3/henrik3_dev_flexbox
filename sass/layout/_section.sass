@@ -6,22 +6,44 @@
 
   &__box
     width: 100%
+    display: flex
+    flex-direction: column
 
+    & .heading-primary, .heading-secondary
+      align-self: center
+
+    & .heading-secondary
+      margin-top: 3rem
 
   &__text-box
+    align-self: center
+    width: 70%
     display: flex
-    align-items: center
-    flex-direction: column
+    justify-content: center
+    margin-top: 5rem
+    padding: 5rem
+    background-color: #eee
+    border-radius: 40px
+    color: $text-color
+    font-size: 2rem
+
+    &--text
+      text-align: center
+      line-height: 1.5
 
   &__profile-picture
     width: 35em
     margin-bottom: 3em
     border: 1rem solid $text-color
     border-radius: 50%
+    align-self: center
 
   &__skills
-    display: grid
-    grid-template-columns: repeat(3, 1fr)
+    //display: grid
+    //grid-template-columns: repeat(3, 1fr)
+    display: flex
+    justify-content: space-between
+    flex: 1 0 auto
 
     & .mdc-card
       //margin-bottom: 1.5rem
@@ -30,3 +52,8 @@
         margin-left: 1rem
       &:not(:last-child)
         margin-right: 1rem
+
+  &__chips-languages
+    display: flex
+    align-items: center
+    justify-content: flex-start
