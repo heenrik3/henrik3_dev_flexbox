@@ -53,7 +53,7 @@ body {
   letter-spacing: 0.75px;
 }
 .mdc-button--outlined {
-  color: #F2165C;
+  color: #333333;
 }
 .mdc-button--raised {
   color: white;
@@ -80,7 +80,7 @@ body {
 .section__title {
   font-size: 3.5rem;
   font-weight: 300;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .section__skills--title {
   font-size: 2rem;
@@ -103,6 +103,20 @@ body {
   text-align: center;
 }
 
+.grid-3-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+
+.grid-3-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 3rem;
+}
+
 .mdc-button {
   padding: 8px 16px;
   border: none;
@@ -118,22 +132,22 @@ body {
   background-color: white;
 }
 .mdc-button--outlined:hover {
-  background-color: #feeff4;
+  background-color: #a6a6a6;
 }
 .mdc-button--outlined:active {
-  background-color: #fdd7e3;
+  background-color: #999999;
 }
 .mdc-button--raised {
   border: 1px solid transparent;
-  background-color: #F2165C;
+  background-color: #333333;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .mdc-button--raised:hover {
-  background-color: #f65e8f;
+  background-color: #595959;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .mdc-button--raised:active {
-  background-color: #f777a0;
+  background-color: #666666;
 }
 
 .mdc-card {
@@ -151,6 +165,7 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .mdc-card--outlined {
+  min-width: 31.1rem;
   box-shadow: 0;
   border: 1px solid #e0e0e0;
 }
@@ -182,13 +197,13 @@ body {
 }
 .mdc-card__supporting-text {
   padding-top: 2.4rem;
-  padding-bottom: 1.6rem;
+  padding: 1.6rem;
   font-size: 1.4rem;
 }
 .mdc-card__chips-section {
   padding: 1.6rem;
   display: flex;
-  overflow: auto;
+  flex-wrap: wrap;
 }
 .mdc-card__chips-section .mdc-chips {
   color: #717171;
@@ -247,6 +262,7 @@ body {
 
 .container {
   width: 70%;
+  max-width: 1250px;
   margin: 5rem auto;
   padding: 8rem;
   border-radius: 40px;
@@ -284,7 +300,7 @@ body {
   *    margin-right: 1rem */
 }
 .section:not(:last-child) {
-  margin-bottom: 20em;
+  margin-bottom: 10em;
 }
 .section__box {
   width: 100%;
@@ -326,12 +342,6 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 3rem;
 }
-.section__skills--2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 3rem;
-}
 .section__chips-languages {
   display: flex;
   align-items: center;
@@ -339,7 +349,7 @@ body {
 }
 
 .footer {
-  background-color: #F2165C;
+  background-color: #333333;
   display: flex;
   align-items: center;
   flex-direction: column;
