@@ -2,7 +2,9 @@
 <html lang="pt-br" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>cv</title>
+  <title></title>
+  <link rel="shortcut icon" href="drawables/favicon.png">
+  <link rel="stylesheet" href="css/icofont.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -10,7 +12,7 @@
   <div class="container">
 
     <header class="header">
-      <img class="header__logo" alt="Henrik" src="img/logo.svg">
+      <img class="header__logo" alt="Henrik" src="drawables/logo-b.svg">
       <div class="header__menu-box">
         <button class="mdc-button mdc-button--outlined">
           <span class="mdc-button__label">sobre</span>
@@ -24,7 +26,6 @@
 
     <main class="main">
       <section class="section">
-        <div class="section__box">
           <img class="section__profile-picture"src="img/prof-pic2.png" alt="me">
           <h1 class="heading-primary">Olá! :)</h1>
           <h2 class="heading-secondary">um pouco sobre mim</h2>
@@ -38,15 +39,50 @@
               Eu acredito que sabedoria é a chave fundamental no desenvolvimento humano e pode revelar as verdades ocultas.
               Com o que aprendemos, podemos desbloquear os maiores feitos e o verdadeiro potencial da humanidade!
             </span>
+
+            <!--<h2 class="section__title">Hobbies</h2> -->
+
+            <div class="hobbies">
+              <div class="hobbies-box">
+                <i class="hobbies-box__icon icofont-code"></i>
+                <h3 class="hobbies-box__title">Programação</h3>
+                <p class="hobbies-box__text">Estruturar pequenas páginas ou programas que faço, é prazeroso e não sinto o tempo passar.</p>
+              </div>
+              <div class="hobbies-box">
+                <i class="hobbies-box__icon icofont-ruler-pencil-alt-2"></i>
+                <h3 class="hobbies-box__title">Estudo</h3>
+                <p class="hobbies-box__text">Tento sempre me manter aprendendo coisas novas.</p>
+              </div>
+              <div class="hobbies-box">
+                <i class="hobbies-box__icon icofont-music-disk"></i>
+                <h3 class="hobbies-box__title">Música</h3>
+                <p class="hobbies-box__text">Ouvir uma boa música ás vezes é tudo o que eu preciso.<br> Ouço muito Pop e EDM.</p>
+              </div>
+              <div class="hobbies-box">
+                <i class="hobbies-box__icon icofont-game"></i>
+                <h3 class="hobbies-box__title">Games</h3>
+                <p class="hobbies-box__text">Jogo com <br>amigos quando posso.<br>Cartas, construtores de cidades e FPS são os preferidos.</p>
+              </div>
+              <div class="hobbies-box">
+                <i class="hobbies-box__icon icofont-leaf"></i>
+                <h3 class="hobbies-box__title">Natureza</h3>
+                <p class="hobbies-box__text">Apesar de ser muito conectado, a natureza é de onde vinhemos e para onde voltaremos.
+                  Admiro paisagens e coisas simples.</p>
+              </div>
+              <div class="hobbies-box">
+                <i class="hobbies-box__icon icofont-space"></i>
+                <h3 class="hobbies-box__title">Espaço</h3>
+                <p class="hobbies-box__text">Gosto de olhar o vazio a noite
+                e imaginar as possibilidades do que não conhecemos.</p>
+              </div>
+            </div>
           </div>
-        </div>
       </section>
       <section class="section">
-        <div class="section__box">
           <h2 class="section__title">Tenho conhecimento em...</h2>
           <div class="section__skills">
 
-            <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card mdc-card--raised">
               <div class="mdc-card__media">
                 <img class="mdc-card__media--image"src="img/program.png" alt="imagem"></img>
               </div>
@@ -67,9 +103,9 @@
                 </div>
               </div>
             </div>
-            <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card mdc-card--raised">
               <div class="mdc-card__media">
-                <img class="mdc-card__media--image"src="img/fundo-1.png" alt="imagem"></img>
+                <img class="mdc-card__media--image"src="img/website.png" alt="imagem"></img>
               </div>
               <div class="mdc-card__text-section">
                 <div class="mdc-card__text-section__title">Web</div>
@@ -91,7 +127,7 @@
                 </div>
               </div>
             </div>
-            <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card mdc-card--raised">
               <div class="mdc-card__media">
                 <img class="mdc-card__media--image"src="img/mobile-2.png" alt="imagem"></img>
               </div>
@@ -109,7 +145,7 @@
                 </div>
               </div>
             </div>
-            <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card mdc-card--raised">
               <div class="mdc-card__media">
                 <img class="mdc-card__media--image"src="img/program.png" alt="imagem"></img>
               </div>
@@ -125,21 +161,24 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
       <section class="section">
-        <div class="section__box">
-          <h2 class="section__title">Algumas habilidades pessoais</h2>
+          <h2 class="section__title">Algumas características pessoais</h2>
           <div class="grid-3-2">
             <div class="mdc-card mdc-card--outlined">
               <div class="mdc-card__text-section">
                 <div class="mdc-card__text-section__title">Aprendizado contínuo</div>
               </div>
-
+              <div class="icon-section">
+                <i class="icon-section__icon icofont-infinite"></i>
+              </div>
             </div>
             <div class="mdc-card mdc-card--outlined">
               <div class="mdc-card__text-section">
                 <div class="mdc-card__text-section__title">Aprendizagem acelerada</div>
+              </div>
+              <div class="icon-section">
+                <i class="icon-section__icon icofont-wall-clock"></i>
               </div>
             </div>
 
@@ -147,15 +186,24 @@
               <div class="mdc-card__text-section">
                 <div class="mdc-card__text-section__title">Capacidade análitica</div>
               </div>
+              <div class="icon-section">
+                <i class="icon-section__icon icofont-unique-idea"></i>
+              </div>
             </div>
             <div class="mdc-card mdc-card--outlined">
               <div class="mdc-card__text-section">
                 <div class="mdc-card__text-section__title">Comunicação interpessoal</div>
               </div>
+              <div class="icon-section">
+                <i class="icon-section__icon icofont-speech-comments"></i>
+              </div>
             </div>
             <div class="mdc-card mdc-card--outlined">
               <div class="mdc-card__text-section">
                 <div class="mdc-card__text-section__title">Planejamento</div>
+              </div>
+              <div class="icon-section">
+                <i class="icon-section__icon icofont-tasks"></i>
               </div>
             </div>
 
@@ -163,12 +211,13 @@
               <div class="mdc-card__text-section">
                 <div class="mdc-card__text-section__title">Trabalho em equipe</div>
               </div>
+              <div class="icon-section">
+                <i class="icon-section__icon icofont-group-students"></i>
+              </div>
             </div>
           </div>
-        </div>
       </section>
       <section class="section">
-        <div class="section__box">
           <h2 class="section__title">Atividades extras</h2>
           <div class="grid-3-1">
             <div class="mdc-card mdc-card--raised">
@@ -180,29 +229,9 @@
                 <div class="mdc-card__text-section__subhead">Boas práticas em programação</div>
               </div>
             </div>
-            <div class="mdc-card mdc-card--raised">
-              <div class="mdc-card__media">
-                <img class="mdc-card__media--image"src="img/clean.png" alt="imagem"></img>
-              </div>
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Livro Clean Code</div>
-                <div class="mdc-card__text-section__subhead">Boas práticas em programação</div>
-              </div>
-            </div>
-            <div class="mdc-card mdc-card--raised">
-              <div class="mdc-card__media">
-                <img class="mdc-card__media--image"src="img/clean.png" alt="imagem"></img>
-              </div>
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Livro Clean Code</div>
-                <div class="mdc-card__text-section__subhead">Boas práticas em programação</div>
-              </div>
-            </div>
           </div>
-        </div>
       </section>
       <section class="section">
-        <div class="section__box">
           <h2 class="section__title">Idiomas</h2>
           <div class="grid-3-1">
             <div class="mdc-card mdc-card--outlined">
@@ -224,16 +253,13 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
       <button class="mdc-button mdc-button--raised">
         <span class="mdc-button__label">contato</span>
       </button>
     </main>
     <footer class="footer">
-      <span class="legal">
-        &copy; 2021 by Henrik3. All rights reserved.
-      </span>
+      <img src="drawables/logo-w.svg" alt="logo">
     </footer>
   </div>
 </body>

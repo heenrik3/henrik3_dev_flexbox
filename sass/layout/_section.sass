@@ -1,25 +1,21 @@
 .section
   width: 100%
 
+  display: flex
+  flex-direction: column
+
   &:not(:last-child)
     margin-bottom: 10em
 
-  &__box
-    width: 100%
-    display: flex
-    flex-direction: column
+  & .heading-primary, .heading-secondary
+    align-self: center
 
-    & .heading-primary, .heading-secondary
-      align-self: center
-
-    & .heading-secondary
-      margin-top: 3rem
+  & .heading-secondary
+    margin-top: 3rem
 
   &__text-box
     align-self: center
     width: 70%
-    display: flex
-    justify-content: center
     margin-top: 5rem
     padding: 5rem
     background-color: #eee
@@ -27,7 +23,12 @@
     color: $text-color
     font-size: 2rem
 
+    display: flex
+    justify-content: center
+    flex-direction: column
+
     &--text
+      margin-bottom: 3rem
       text-align: center
       line-height: 1.5
 
@@ -58,8 +59,3 @@
         margin-left: 1rem
       &:not(:last-child)
         margin-right: 1rem
-
-  &__chips-languages
-    display: flex
-    align-items: center
-    justify-content: flex-start

@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@font-face {
-  font-family: Quantify;
-  src: url(../fonts/Quantify.ttf);
-}
 @keyframes moveInTop {
   0% {
     opacity: 0;
@@ -57,7 +53,7 @@ body {
   letter-spacing: 0.75px;
 }
 .mdc-button--outlined {
-  color: #333333;
+  color: #f83600;
 }
 .mdc-button--raised {
   color: white;
@@ -86,15 +82,6 @@ body {
   font-weight: 300;
   margin-bottom: 3rem;
 }
-.section__skills--title {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-.footer {
-  color: white;
-  font-size: 1.5em;
-}
 
 .darker-bg {
   background-color: #f4f4f4;
@@ -102,8 +89,19 @@ body {
   padding: 5rem;
 }
 
+.icon-section {
+  padding: 0 1.6rem 1.6rem 1.6rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.icon-section__icon {
+  font-size: 3.5rem;
+  background-image: linear-gradient(to right, #f83600, #f9d423);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .legal {
-  padding: 2.5rem;
   text-align: center;
 }
 
@@ -121,6 +119,45 @@ body {
   grid-gap: 3rem;
 }
 
+.hobbies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+}
+.hobbies-box {
+  padding: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+.hobbies-box__title, .hobbies-box__text {
+  color: inherit;
+}
+.hobbies-box__icon {
+  padding: 2rem;
+  font-size: 5rem;
+  line-height: 0.5;
+  background-image: linear-gradient(to right, #f83600, #f9d423);
+  -webkit-background-clip: text;
+  color: transparent;
+  justify-content: flex-start;
+}
+.hobbies-box__title {
+  font-weight: 300;
+  line-height: 1.5;
+}
+.hobbies-box__text {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.hobbies-box:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
 .mdc-button {
   padding: 8px 16px;
   border: none;
@@ -131,27 +168,30 @@ body {
 .mdc-button:focus {
   outline: none;
 }
+.mdc-button:hover {
+  cursor: pointer;
+}
 .mdc-button--outlined {
   border: 1px solid #ddd;
   background-color: white;
 }
 .mdc-button--outlined:hover {
-  background-color: #a6a6a6;
+  background-color: #ffe6df;
 }
 .mdc-button--outlined:active {
-  background-color: #999999;
+  background-color: #ffd2c5;
 }
 .mdc-button--raised {
   border: 1px solid transparent;
-  background-color: #333333;
+  background-color: #f83600;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .mdc-button--raised:hover {
-  background-color: #595959;
+  background-color: #ff6e46;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .mdc-button--raised:active {
-  background-color: #666666;
+  background-color: #ff825f;
 }
 
 .mdc-card {
@@ -288,6 +328,8 @@ body {
 
 .section {
   width: 100%;
+  display: flex;
+  flex-direction: column;
   /*  display: flex
   * justify-content: space-between
   * flex: 1 0 auto
@@ -307,30 +349,27 @@ body {
 .section:not(:last-child) {
   margin-bottom: 10em;
 }
-.section__box {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.section__box .heading-primary, .section__box .heading-secondary {
+.section .heading-primary, .section .heading-secondary {
   align-self: center;
 }
-.section__box .heading-secondary {
+.section .heading-secondary {
   margin-top: 3rem;
 }
 .section__text-box {
   align-self: center;
   width: 70%;
-  display: flex;
-  justify-content: center;
   margin-top: 5rem;
   padding: 5rem;
   background-color: #eee;
   border-radius: 40px;
   color: #333333;
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .section__text-box--text {
+  margin-bottom: 3rem;
   text-align: center;
   line-height: 1.5;
 }
@@ -347,17 +386,12 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 3rem;
 }
-.section__chips-languages {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
 
 .footer {
-  background-color: #333333;
+  background-color: #f83600;
+  padding: 2rem;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
