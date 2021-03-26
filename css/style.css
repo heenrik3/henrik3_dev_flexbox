@@ -53,7 +53,7 @@ body {
   letter-spacing: 0.75px;
 }
 .mdc-button--outlined {
-  color: #f83600;
+  color: #0b8793;
 }
 .mdc-button--raised {
   color: white;
@@ -89,14 +89,26 @@ body {
   padding: 5rem;
 }
 
+.u-align-center {
+  align-self: center;
+}
+
+.u-translateY-minus {
+  transform: translateY(1rem);
+}
+
+.u-border-white {
+  border: 5px solid white !important;
+}
+
 .icon-section {
   padding: 0 1.6rem 1.6rem 1.6rem;
   display: flex;
   justify-content: flex-start;
 }
 .icon-section__icon {
-  font-size: 3.5rem;
-  background-image: linear-gradient(to right, #f83600, #f9d423);
+  font-size: 4rem;
+  background-image: linear-gradient(to right, #aaffa9, #0b8793);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -140,10 +152,9 @@ body {
   padding: 2rem;
   font-size: 5rem;
   line-height: 0.5;
-  background-image: linear-gradient(to right, #f83600, #f9d423);
+  background-image: linear-gradient(to right, #aaffa9, #0b8793);
   -webkit-background-clip: text;
   color: transparent;
-  justify-content: flex-start;
 }
 .hobbies-box__title {
   font-weight: 300;
@@ -151,11 +162,28 @@ body {
 }
 .hobbies-box__text {
   font-size: 1.4rem;
+  line-height: 1.6;
   text-align: center;
 }
 .hobbies-box:hover {
   transform: translateY(-1rem);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.mdc-fab {
+  height: 5.6rem;
+  width: 5.6rem;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: #0b8793;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.mdc-fab__icon {
+  font-size: 2.4rem;
+  background-color: white;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .mdc-button {
@@ -176,22 +204,22 @@ body {
   background-color: white;
 }
 .mdc-button--outlined:hover {
-  background-color: #ffe6df;
+  background-color: #8dedf6;
 }
 .mdc-button--outlined:active {
-  background-color: #ffd2c5;
+  background-color: #75e9f5;
 }
 .mdc-button--raised {
   border: 1px solid transparent;
-  background-color: #f83600;
+  background-color: #0b8793;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .mdc-button--raised:hover {
-  background-color: #ff6e46;
+  background-color: #10c8da;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .mdc-button--raised:active {
-  background-color: #ff825f;
+  background-color: #16dbee;
 }
 
 .mdc-card {
@@ -286,6 +314,47 @@ body {
   align-self: center;
 }
 
+.popup {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+}
+.popup__content {
+  width: 75%;
+  height: 50rem;
+  padding: 5rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  background-color: white;
+  align-self: center;
+}
+
+.socials {
+  padding-top: 1rem;
+  width: 12%;
+  display: flex;
+  justify-content: space-around;
+}
+.socials__link {
+  text-decoration: none;
+}
+.socials__icon {
+  font-size: 4rem;
+  background-color: white;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.socials__icon:hover {
+  cursor: pointer;
+}
+
 .header {
   width: 100%;
   margin-bottom: 15em;
@@ -302,6 +371,11 @@ body {
 }
 .header__menu-box .mdc-button:not(:first-child) {
   margin-left: 0.6em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -357,10 +431,10 @@ body {
 }
 .section__text-box {
   align-self: center;
-  width: 70%;
+  width: 75%;
   margin-top: 5rem;
   padding: 5rem;
-  background-color: #eee;
+  background-color: #f0f0f0;
   border-radius: 40px;
   color: #333333;
   font-size: 2rem;
@@ -369,6 +443,7 @@ body {
   flex-direction: column;
 }
 .section__text-box--text {
+  hyphens: auto;
   margin-bottom: 3rem;
   text-align: center;
   line-height: 1.5;
@@ -388,10 +463,15 @@ body {
 }
 
 .footer {
-  background-color: #f83600;
+  background-color: #0b8793;
   padding: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.footer img {
+  width: 15rem;
 }
 
 /*# sourceMappingURL=style.css.map */

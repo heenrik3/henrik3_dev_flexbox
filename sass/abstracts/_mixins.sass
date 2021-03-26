@@ -23,3 +23,8 @@
   @if $breakpoint == big-desktop
     @media (max-width: 112.5em)
       @content
+
+@mixin gradient-icon
+      background-image: linear-gradient(to right, #aaffa9, #0b8793)
+      -webkit-background-clip: text
+      color: transparent
