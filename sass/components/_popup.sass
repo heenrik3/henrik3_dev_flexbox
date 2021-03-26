@@ -8,17 +8,43 @@
   left: 0
 
   opacity: 0
-  visibility: hidden
+  visibility: invisible
+  z-index: -1
   transition: all 0.5s
 
 
   display: flex
   justify-content: center
 
-  &__content
-    width: 75%
-    height: 50rem
+  .content
     padding: 5rem
+    border-radius: 0.4rem
     box-shadow: 0 2rem 4rem rgba(black, .2)
     background-color: white
     align-self: center
+
+    display: flex
+    flex-direction: column
+
+    &__header
+      margin-bottom: 2rem
+      display: flex
+      justify-content: space-between
+
+      &__title
+        font-size: 3.5rem
+        font-weight: 300
+
+      &__close-icon
+        align-self: center
+
+        & .icon
+          font-size: 3rem
+          border-radius: 50%
+          transition: background-color 0.3s
+
+          &:hover
+            background-color: lightgray
+
+          &:active
+            background-color: gray

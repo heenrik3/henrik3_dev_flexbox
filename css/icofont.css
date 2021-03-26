@@ -173,6 +173,61 @@ url("./fonts/icofont.woff") format("woff");
   content: "\e911";
 }
 
+.icofont-close-circled:before
+{
+  content: "\eedd";
+}
+
+.icofont-console:before
+{
+  content: "\eef0";
+}
+
+.icofont-mail:before
+{
+  content: "\ef88";
+}
+
+.icofont-look:before
+{
+  content: "\ef7f";
+}
+
+.icofont-location-pin:before
+{
+  content: "\ef79";
+}
+
+.icofont-phone-circle:before
+{
+  content: "\efba";
+}
+
+.icofont-close-line-circled:before
+{
+  content: "\eede";
+}
+
+.icofont-download:before
+{
+  content: "\ef08";
+}
+
+.icofont-ui-brightness:before
+{
+  content: "\ec43";
+}
+
+.icofont-check-alt:before
+{
+  content: "\eed6";
+}
+
+.icofont-thin-up:before
+{
+  content: "\eacb";
+}
+
 .icofont-xs
 {
   font-size: .5em;

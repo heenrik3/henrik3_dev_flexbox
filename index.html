@@ -8,16 +8,13 @@
   <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
-  <div class="container">
+<body id="body">
+  <div class="container" id="container">
 
-    <header class="header">
-      <img class="header__logo" alt="Henrik" src="drawables/logo-b.svg">
+    <header class="header" >
+      <img class="header__logo" alt="Henrik" src="drawables/logo-b.svg" id="logo">
       <div class="header__menu-box">
-        <button class="mdc-button mdc-button--outlined">
-          <span class="mdc-button__label">sobre</span>
-        </button>
-
+        <i class="header__menu-box__theme-chooser icofont-ui-brightness" id="theme-chooser"></i>
         <button class="mdc-button mdc-button--raised" id="popup-call">
           <span class="mdc-button__label">contato</span>
         </button>
@@ -26,248 +23,288 @@
 
     <main class="main">
       <section class="section">
-          <img class="section__profile-picture"src="img/prof-pic2.png" alt="me">
-          <h1 class="heading-primary">Olá! :)</h1>
-          <h2 class="heading-secondary">um pouco sobre mim</h2>
-          <div class="section__text-box">
-            <span class="section__text-box--text">
-              Me chamo Luis Henrique.<br><br>
-              Sou graduando em Análise e Desenvolvimento de Sistemas pela UEZO.<br>
-              Sempre fui apaixonado e curioso sobre tecnologia então por isso, decidi mergulhar nesse mundo.
-              Atualmente, a sede de conhecimento sobre essa área me domina, me sinto muito motivado e a cada desafio pelo caminho,
-              surge ainda mais vontade de avançar.<br><br>
-              Eu acredito que sabedoria é a chave fundamental no desenvolvimento humano e pode revelar as verdades ocultas.
-              Com o que aprendemos, podemos desbloquear os maiores feitos e o verdadeiro potencial da humanidade!
-            </span>
+        <img class="section__profile-picture"src="img/prof-pic2.png" alt="me">
+        <h1 class="heading-primary">Olá! :)</h1>
+        <h2 class="heading-secondary">um pouco sobre mim</h2>
+        <div class="section__text-box">
+          <span class="section__text-box--text">
+            Me chamo Luis Henrique.<br><br>
+            Sou graduando em Análise e Desenvolvimento de Sistemas pela UEZO.<br>
+            Sempre fui curioso sobre tecnologia então por isso, <br>decidi mergulhar nesse mundo.<br>
+            Atualmente, a sede de conhecimento sobre essa área me domina,<br> me sinto muito motivado e a cada desafio pelo caminho,
+            surge ainda mais vontade de avançar.<br><br>
+            Eu acredito que sabedoria é a chave fundamental no desenvolvimento humano e pode revelar as verdades ocultas.
+            Com o que aprendemos, podemos desbloquear os maiores feitos e o verdadeiro potencial da humanidade!
+          </span>
 
-            <!--<h2 class="section__title">Hobbies</h2> -->
+          <!--<h2 class="section__title">Hobbies</h2> -->
 
-            <div class="hobbies">
-              <div class="hobbies-box">
-                <i class="hobbies-box__icon icofont-code"></i>
-                <h3 class="hobbies-box__title">Programação</h3>
-                <p class="hobbies-box__text">Estruturar pequenas páginas ou programas que faço, é prazeroso e não sinto o tempo passar.</p>
-              </div>
-              <div class="hobbies-box">
-                <i class="hobbies-box__icon icofont-ruler-pencil-alt-2"></i>
-                <h3 class="hobbies-box__title">Estudo</h3>
-                <p class="hobbies-box__text">Tento sempre me manter aprendendo coisas novas.</p>
-              </div>
-              <div class="hobbies-box">
-                <i class="hobbies-box__icon icofont-music-disk"></i>
-                <h3 class="hobbies-box__title">Música</h3>
-                <p class="hobbies-box__text">Ouvir uma boa música ás vezes é tudo o que eu preciso.<br> Ouço muito Pop e EDM.</p>
-              </div>
-              <div class="hobbies-box">
-                <i class="hobbies-box__icon icofont-game"></i>
-                <h3 class="hobbies-box__title">Games</h3>
-                <p class="hobbies-box__text">Jogo com <br>amigos quando posso.<br>Cartas, construtores de cidades e FPS são os preferidos.</p>
-              </div>
-              <div class="hobbies-box">
-                <i class="hobbies-box__icon icofont-leaf"></i>
-                <h3 class="hobbies-box__title">Natureza</h3>
-                <p class="hobbies-box__text">Apesar de ser muito conectado, a natureza é de onde vinhemos e para onde voltaremos.
-                  Admiro paisagens e coisas simples.</p>
+          <div class="hobbies">
+            <div class="hobbies-box">
+              <i class="hobbies-box__icon icofont-console"></i>
+              <h3 class="hobbies-box__title">Programação</h3>
+              <p class="hobbies-box__text">Estruturar pequenas páginas ou programas que faço, é prazeroso e não sinto o tempo passar.</p>
+            </div>
+            <div class="hobbies-box">
+              <i class="hobbies-box__icon icofont-ruler-pencil-alt-2"></i>
+              <h3 class="hobbies-box__title">Estudo</h3>
+              <p class="hobbies-box__text">Tento sempre me manter aprendendo coisas novas.</p>
+            </div>
+            <div class="hobbies-box">
+              <i class="hobbies-box__icon icofont-music-disk"></i>
+              <h3 class="hobbies-box__title">Música</h3>
+              <p class="hobbies-box__text">Ouvir uma boa música ás vezes é tudo o que eu preciso.<br> Ouço muito Pop e EDM.</p>
+            </div>
+            <div class="hobbies-box">
+              <i class="hobbies-box__icon icofont-game"></i>
+              <h3 class="hobbies-box__title">Games</h3>
+              <p class="hobbies-box__text">Jogo com <br>amigos quando posso.<br>Cartas, construtores de cidades e FPS são os preferidos.</p>
+            </div>
+            <div class="hobbies-box">
+              <i class="hobbies-box__icon icofont-leaf"></i>
+              <h3 class="hobbies-box__title">Natureza</h3>
+              <p class="hobbies-box__text">Apesar de ser muito conectado, a natureza é de onde vinhemos e para onde voltaremos.
+                Admiro paisagens e coisas simples.</p>
               </div>
               <div class="hobbies-box">
                 <i class="hobbies-box__icon icofont-space"></i>
                 <h3 class="hobbies-box__title">Espaço</h3>
                 <p class="hobbies-box__text">Gosto de olhar o vazio a noite
-                e imaginar as possibilidades do que não conhecemos.</p>
+                  e imaginar as possibilidades do que não conhecemos.</p>
+                </div>
               </div>
             </div>
-          </div>
-      </section>
-      <section class="section">
-          <h2 class="section__title">Tenho conhecimento em</h2>
-          <div class="section__skills">
+          </section>
+          <section class="section">
+            <h2 class="section__title">Tenho conhecimento em</h2>
+            <div class="section__skills">
 
-            <div class="mdc-card mdc-card--raised">
-              <div class="mdc-card__media">
-                <img class="mdc-card__media--image"src="img/program.png" alt="imagem"></img>
-              </div>
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Programação</div>
-                <div class="mdc-card__text-section__subhead">Desktop</div>
-              </div>
-              <div class="mdc-divider"></div>
-              <div class="mdc-card__chips-section">
-                <div class="mdc-chips">
-                  <span class="mdc-chips__label">C</span>
+              <div class="mdc-card mdc-card--raised">
+                <div class="mdc-card__media">
+                  <img class="mdc-card__media--image"src="img/program.png" alt="imagem"></img>
                 </div>
-                <div class="mdc-chips">
-                  <span class="mdc-chips__label">C++</span>
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Programação</div>
+                  <div class="mdc-card__text-section__subhead">Desktop</div>
                 </div>
-                <div class="mdc-chips">
-                  <span class="mdc-chips__label">Python</span>
+                <div class="mdc-divider"></div>
+                <div class="mdc-card__chips-section">
+                  <div class="mdc-chips">
+                    <span class="mdc-chips__label">C</span>
+                  </div>
+                  <div class="mdc-chips">
+                    <span class="mdc-chips__label">C++</span>
+                  </div>
+                  <div class="mdc-chips">
+                    <span class="mdc-chips__label">Python</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-card mdc-card--raised">
+                <div class="mdc-card__media">
+                  <img class="mdc-card__media--image"src="img/website.png" alt="imagem"></img>
+                </div>
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Web</div>
+                  <div class="mdc-card__text-section__subhead">Responsivo</div>
+                </div>
+                <div class="mdc-divider"></div>
+                <div class="mdc-card__chips-section">
+                  <div class="mdc-chips">
+                    <span class="mdc-chips__label">HTML5</span>
+                  </div>
+                  <div class="mdc-chips">
+                    <span class="mdc-chips__label">CSS3</span>
+                  </div>
+                  <div class="mdc-chips">
+                    <span class="mdc-chips__label">Sass</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-card mdc-card--raised">
+                <div class="mdc-card__media">
+                  <img class="mdc-card__media--image"src="img/mobile-2.png" alt="imagem"></img>
+                </div>
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Mobile</div>
+                  <div class="mdc-card__text-section__subhead">Android</div>
+                </div>
+                <div class="mdc-divider"></div>
+                <div class="mdc-card__chips-section">
+                  <div class="mdc-chips">
+                    <span class="mdc-chips__label">Java</span>
+                  </div>
+                  <div class="mdc-chips">
+                    <span class="mdc-chips__label">Kotlin</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-card mdc-card--raised">
+                <div class="mdc-card__media">
+                  <img class="mdc-card__media--image"src="img/program.png" alt="imagem"></img>
+                </div>
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Banco de Dados</div>
+                  <div class="mdc-card__text-section__subhead">Oracle</div>
+                </div>
+                <div class="mdc-divider"></div>
+                <div class="mdc-card__chips-section">
+                  <div class="mdc-chips">
+                    <span class="mdc-chips__label">MySQL</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="mdc-card mdc-card--raised">
-              <div class="mdc-card__media">
-                <img class="mdc-card__media--image"src="img/website.png" alt="imagem"></img>
-              </div>
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Web</div>
-                <div class="mdc-card__text-section__subhead">Responsivo</div>
-              </div>
-              <div class="mdc-divider"></div>
-              <div class="mdc-card__chips-section">
-                <div class="mdc-chips">
-                  <span class="mdc-chips__label">HTML5</span>
+          </section>
+          <section class="section">
+            <h2 class="section__title">Algumas características pessoais</h2>
+            <div class="grid-3-2">
+              <div class="mdc-card mdc-card--outlined">
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Aprendizado contínuo</div>
                 </div>
-                <div class="mdc-chips">
-                  <span class="mdc-chips__label">CSS3</span>
-                </div>
-                <div class="mdc-chips">
-                  <span class="mdc-chips__label">Sass</span>
+                <div class="icon-section">
+                  <i class="icon-section__icon icofont-infinite"></i>
                 </div>
               </div>
-            </div>
-            <div class="mdc-card mdc-card--raised">
-              <div class="mdc-card__media">
-                <img class="mdc-card__media--image"src="img/mobile-2.png" alt="imagem"></img>
-              </div>
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Mobile</div>
-                <div class="mdc-card__text-section__subhead">Android</div>
-              </div>
-              <div class="mdc-divider"></div>
-              <div class="mdc-card__chips-section">
-                <div class="mdc-chips">
-                  <span class="mdc-chips__label">Java</span>
+              <div class="mdc-card mdc-card--outlined">
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Aprendizagem acelerada</div>
                 </div>
-                <div class="mdc-chips">
-                  <span class="mdc-chips__label">Kotlin</span>
+                <div class="icon-section">
+                  <i class="icon-section__icon icofont-wall-clock"></i>
                 </div>
               </div>
-            </div>
-            <div class="mdc-card mdc-card--raised">
-              <div class="mdc-card__media">
-                <img class="mdc-card__media--image"src="img/program.png" alt="imagem"></img>
-              </div>
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Banco de Dados</div>
-                <div class="mdc-card__text-section__subhead">Oracle</div>
-              </div>
-              <div class="mdc-divider"></div>
-              <div class="mdc-card__chips-section">
-                <div class="mdc-chips">
-                  <span class="mdc-chips__label">MySQL</span>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-      <section class="section">
-          <h2 class="section__title">Algumas características pessoais</h2>
-          <div class="grid-3-2">
-            <div class="mdc-card mdc-card--outlined">
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Aprendizado contínuo</div>
-              </div>
-              <div class="icon-section">
-                <i class="icon-section__icon icofont-infinite"></i>
-              </div>
-            </div>
-            <div class="mdc-card mdc-card--outlined">
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Aprendizagem acelerada</div>
-              </div>
-              <div class="icon-section">
-                <i class="icon-section__icon icofont-wall-clock"></i>
-              </div>
-            </div>
 
-            <div class="mdc-card mdc-card--outlined">
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Capacidade análitica</div>
+              <div class="mdc-card mdc-card--outlined">
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Capacidade análitica</div>
+                </div>
+                <div class="icon-section">
+                  <i class="icon-section__icon icofont-look"></i>
+                </div>
               </div>
-              <div class="icon-section">
-                <i class="icon-section__icon icofont-unique-idea"></i>
+              <div class="mdc-card mdc-card--outlined">
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Comunicação interpessoal</div>
+                </div>
+                <div class="icon-section">
+                  <i class="icon-section__icon icofont-speech-comments"></i>
+                </div>
               </div>
-            </div>
-            <div class="mdc-card mdc-card--outlined">
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Comunicação interpessoal</div>
+              <div class="mdc-card mdc-card--outlined">
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Planejamento</div>
+                </div>
+                <div class="icon-section">
+                  <i class="icon-section__icon icofont-tasks"></i>
+                </div>
               </div>
-              <div class="icon-section">
-                <i class="icon-section__icon icofont-speech-comments"></i>
-              </div>
-            </div>
-            <div class="mdc-card mdc-card--outlined">
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Planejamento</div>
-              </div>
-              <div class="icon-section">
-                <i class="icon-section__icon icofont-tasks"></i>
-              </div>
-            </div>
 
-            <div class="mdc-card mdc-card--outlined">
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Trabalho em equipe</div>
-              </div>
-              <div class="icon-section">
-                <i class="icon-section__icon icofont-group-students"></i>
+              <div class="mdc-card mdc-card--outlined">
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Trabalho em equipe</div>
+                </div>
+                <div class="icon-section">
+                  <i class="icon-section__icon icofont-group-students"></i>
+                </div>
               </div>
             </div>
+          </section>
+          <section class="section">
+            <h2 class="section__title">Idiomas</h2>
+            <div class="grid-3-1">
+              <div class="mdc-card mdc-card--outlined">
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Inglês</div>
+                  <div class="mdc-card__text-section__subhead">Fluente</div>
+                </div>
+              </div>
+              <div class="mdc-card mdc-card--outlined">
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Espanhol</div>
+                  <div class="mdc-card__text-section__subhead">Intermediário</div>
+                </div>
+              </div>
+              <div class="mdc-card mdc-card--outlined">
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Português</div>
+                  <div class="mdc-card__text-section__subhead">Nativo</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section">
+            <h2 class="section__title">Atividades extras</h2>
+            <div class="grid-3-1">
+              <div class="mdc-card mdc-card--raised">
+                <div class="mdc-card__media">
+                  <img class="mdc-card__media--image"src="img/clean.png" alt="imagem"></img>
+                </div>
+                <div class="mdc-card__text-section">
+                  <div class="mdc-card__text-section__title">Livro Clean Code</div>
+                  <div class="mdc-card__text-section__subhead">Boas práticas em programação</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <img src="drawables/logo-w.svg" alt="logo">
+          <div class="socials">
+            <a class="socials__link" href="#"><i class="socials__icon icofont-twitter"></i></a>
+            <a class="socials__link" href="https://www.linkedin.com/in/henrik3-dev/" alt="linkedin"><i class="socials__icon icofont-linkedin"></i></a>
           </div>
-      </section>
-      <section class="section">
-          <h2 class="section__title">Atividades extras</h2>
-          <div class="grid-3-1">
-            <div class="mdc-card mdc-card--raised">
-              <div class="mdc-card__media">
-                <img class="mdc-card__media--image"src="img/clean.png" alt="imagem"></img>
-              </div>
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Livro Clean Code</div>
-                <div class="mdc-card__text-section__subhead">Boas práticas em programação</div>
-              </div>
-            </div>
-          </div>
-      </section>
-      <section class="section">
-          <h2 class="section__title">Idiomas</h2>
-          <div class="grid-3-1">
-            <div class="mdc-card mdc-card--outlined">
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Inglês</div>
-                <div class="mdc-card__text-section__subhead">Fluente</div>
-              </div>
-            </div>
-            <div class="mdc-card mdc-card--outlined">
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Espanhol</div>
-                <div class="mdc-card__text-section__subhead">Intermediário</div>
-              </div>
-            </div>
-            <div class="mdc-card mdc-card--outlined">
-              <div class="mdc-card__text-section">
-                <div class="mdc-card__text-section__title">Português</div>
-                <div class="mdc-card__text-section__subhead">Nativo</div>
-              </div>
-            </div>
-          </div>
-      </section>
-      <button class="mdc-button mdc-button--raised u-align-center u-translateY-minus u-border-white">
-        <span class="mdc-button__label">contato</span>
-      </button>
-    </main>
-    <footer class="footer">
-      <img src="drawables/logo-w.svg" alt="logo">
-      <div class="socials">
-        <a class="socials__link" href="#"><i class="socials__icon icofont-twitter"></i></a>
-        <a class="socials__link" href="https://www.linkedin.com/in/henrik3-dev/" alt="linkedin"><i class="socials__icon icofont-linkedin"></i></a>
+        </footer>
       </div>
-    </footer>
-  </div>
-  <div class="popup" id="popup">
-    <div class="popup__content">
-        <h2 class="section__title">Obrigado pelo seu interesse!</h2>
+      <div class="popup" id="popup">
+        <div class="content">
+          <div class="content__header">
+            <h2 class="content__header__title">Dados pessoais</h2>
+            <a class="content__header__close-icon" id="close-popup">
+              <i class="icon icofont-close-line-circled"></i>
+            </a>
+          </div>
+
+          <div class="card card--outlined">
+            <div class="card__picture-box">
+              <img src="drawables/popup-pic.png" alt="" class="popup-pic">
+            </div>
+            <div class="card__content">
+              <div class="card__content__title-box">
+                <div class="card__content__main-title">Luis Henrique da S. Paulo</div>
+                <div class="card__content__subhead">27 anos</div>
+              </div>
+
+              <div class="card__content__info-box">
+                <div class="card__content__info">
+                  <i class="card__content__info__icon icofont-phone-circle"></i>
+                  <div class="card__content__info__text">21 98089 9491</div>
+                </div>
+                <div class="card__content__info">
+                  <i class="card__content__info__icon icofont-mail"></i>
+                  <div class="card__content__info__text">henriqlh@gmail.com</div>
+                </div>
+                <div class="card__content__info">
+                  <i class="card__content__info__icon icofont-location-pin"></i>
+                  <div class="card__content__info__text">Nova Iguaçu - RJ</div>
+                </div>
+              </div>
+
+              <div class="card__content__actions">
+                <button class="mdc-button mdc-button--outlined">
+                  <i class="mdc-button__icon icofont-download"></i>
+                  <span class="mdc-button__label">baixar cv</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</body>
-<script type="text/javascript" src="js/script.js"></script>
-</html>
+    <a class="go-up" href="#body">
+      <i class="icon icofont-thin-up"></i>
+    </a>
+  </body>
+  <script type="text/javascript" src="js/script.js"></script>
+  </html>
