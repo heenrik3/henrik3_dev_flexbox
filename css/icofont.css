@@ -228,6 +228,11 @@ url("./fonts/icofont.woff") format("woff");
   content: "\eacb";
 }
 
+.icofont-eye-alt:before
+{
+  content: "\ef21";
+}
+
 .icofont-xs
 {
   font-size: .5em;

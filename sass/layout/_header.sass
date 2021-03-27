@@ -9,6 +9,14 @@
     width: 14em
     margin-right: auto
 
+    @include respond(tab-port)
+      width: 22rem
+
+    @include respond(tab-land)
+      width: 18rem
+
+
+
   &__menu-box
     display: flex
     justify-content: flex-end
@@ -19,4 +27,11 @@
 
     &__theme-chooser
       font-size: 3rem
-      
+      border-radius: 50%
+      transition: background-color 0.3s, transform 1s
+
+      &:hover
+        background-color: lightgray
+
+      &:active
+        transform: rotate(180deg)

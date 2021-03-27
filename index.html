@@ -23,10 +23,10 @@
 
     <main class="main">
       <section class="section">
-        <img class="section__profile-picture"src="img/prof-pic2.png" alt="me">
-        <h1 class="heading-primary">Olá! :)</h1>
+        <img class="section__profile-picture" id="profile-picture"src="img/prof-pic2.png" alt="me">
+        <h1 class="heading-primary">Olá!</h1>
         <h2 class="heading-secondary">um pouco sobre mim</h2>
-        <div class="section__text-box">
+        <div class="section__text-box" id="text-box">
           <span class="section__text-box--text">
             Me chamo Luis Henrique.<br><br>
             Sou graduando em Análise e Desenvolvimento de Sistemas pela UEZO.<br>
@@ -141,7 +141,7 @@
               </div>
               <div class="mdc-card mdc-card--raised">
                 <div class="mdc-card__media">
-                  <img class="mdc-card__media--image"src="img/program.png" alt="imagem"></img>
+                  <img class="mdc-card__media--image"src="img/db.png" alt="imagem"></img>
                 </div>
                 <div class="mdc-card__text-section">
                   <div class="mdc-card__text-section__title">Banco de Dados</div>
@@ -258,7 +258,7 @@
         </footer>
       </div>
       <div class="popup" id="popup">
-        <div class="content">
+        <div class="content" id="popup-content">
           <div class="content__header">
             <h2 class="content__header__title">Dados pessoais</h2>
             <a class="content__header__close-icon" id="close-popup">
@@ -266,7 +266,7 @@
             </a>
           </div>
 
-          <div class="card card--outlined">
+          <div class="card card--outlined" id="card">
             <div class="card__picture-box">
               <img src="drawables/popup-pic.png" alt="" class="popup-pic">
             </div>
@@ -290,11 +290,10 @@
                   <div class="card__content__info__text">Nova Iguaçu - RJ</div>
                 </div>
               </div>
-
               <div class="card__content__actions">
-                <button class="mdc-button mdc-button--outlined">
-                  <i class="mdc-button__icon icofont-download"></i>
-                  <span class="mdc-button__label">baixar cv</span>
+                <button class="mdc-button mdc-button--outlined" id="cv">
+                  <i class="mdc-button__icon icofont-eye-alt"></i>
+                  <span class="mdc-button__label">ver cv</span>
                 </button>
               </div>
             </div>
@@ -302,7 +301,7 @@
         </div>
       </div>
     </div>
-    <a class="go-up" href="#body">
+    <a class="go-up" href="#body" id="go-up">
       <i class="icon icofont-thin-up"></i>
     </a>
   </body>
