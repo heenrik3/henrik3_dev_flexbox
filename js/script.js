@@ -45,7 +45,7 @@ function changeTheme() {
     document.getElementById("body").style.backgroundColor = "#e2e1e0"
 
     document.getElementById("container").style.backgroundColor = white
-    document.getElementById('logo').src = "drawables/logo-b.svg"
+    document.getElementById('logo').src = "drawables/logo-b.png"
     document.getElementById('profile-picture').style.borderColor = "#333333"
     document.getElementById("text-box").style.backgroundColor = "#f0f0f0"
 
@@ -73,7 +73,7 @@ function changeTheme() {
 
 
     document.getElementById("container").style.backgroundColor = "#444"
-    document.getElementById('logo').src = "drawables/logo-w.svg"
+    document.getElementById('logo').src = "drawables/logo-w.png"
     document.getElementById('profile-picture').style.borderColor = "#eee"
     document.getElementById("text-box").style.backgroundColor = "gray"
 
@@ -90,7 +90,7 @@ function changeTheme() {
 
     document.getElementById("popup-content").style.backgroundColor = "gray"
     document.getElementById("card").style.backgroundColor = "darkgray"
-    
+
     themeBlack = 1;
   }
 
