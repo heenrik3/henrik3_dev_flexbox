@@ -1,97 +1,129 @@
-let themeBlack = 0;
-
 document.title = 'Henrik3'.toUpperCase();
 
-document.getElementById("popup-call").addEventListener("click", showPopup)
-document.getElementById("close-popup").addEventListener("click", hidePopup)
-document.getElementById("theme-chooser").addEventListener("click", changeTheme)
-document.getElementById("cv").addEventListener("click", openCV)
-/*
-class whiteTheme {
+class Site {
   constructor() {
+    this.body = document.getElementById("body")
+    this.container = document.getElementById("container")
+    this.logo = document.getElementById("logo")
+    this.profilePicture = document.getElementById("profile-picture")
+    this.textBox = document.getElementById("text-box")
+    this.cards = document.querySelectorAll(".mdc-card")
+    this.box = document.querySelectorAll(".hobbies-box")
+    this.popupContent = document.getElementById("popup-content")
+    this.card = document.getElementById("card")
+    this.goUp = document.getElementById("go-up")
 
   }
 }
 
-class blackTheme {
-  constructor() {
+class Popup {
+  constructor(open, close) {
+    this.popup = document.getElementById("popup")
+    this.open = document.getElementById(open)
+    this.close = document.getElementById(close)
 
+    this.open.addEventListener("click", showPopup)
+    this.close.addEventListener("click", hidePopup)
   }
 }
-*/
 
-function openCV() {
-  window.open("https://resume.io/r/RnMWO7FlC");
+class Theme {
+  constructor() {
+    this.isBlack = false;
+    this.themeChooser = document.getElementById("theme-chooser");
+
+    this.themeChooser.addEventListener("click", changeTheme)
+  }
 }
+
+let site = new Site()
+let PopUp = new Popup("popup-open", "popup-close");
+let theme = new Theme();
+
 
 function showPopup() {
-  document.getElementById("popup").style.zIndex= 1;
-  document.getElementById("popup").style.opacity = 1;
-  document.getElementById("popup").style.visibility = 'visible';
+  PopUp.popup.style.zIndex= 1;
+  PopUp.popup.style.opacity = 1;
+  PopUp.popup.style.visibility = 'visible';
 }
 
 function hidePopup() {
-  document.getElementById("popup").style.zIndex= -1;
-  document.getElementById("popup").style.opacity = 0;
-  document.getElementById("popup").style.visibility = 'invisible';
+  PopUp.popup.style.zIndex= -1;
+  PopUp.popup.style.opacity = 0;
+  PopUp.popup.style.visibility = 'invisible';
 }
+
+document.getElementById("linkedin").addEventListener("click", opensNewTab)
+document.getElementById("resume").addEventListener("click", opensNewTab)
+
+
+function opensNewTab() {
+  let resume = "https://resume.io/r/RnMWO7FlC"
+  let linkedin = "https://www.linkedin.com/in/henrik3-dev/"
+
+  switch (this.id) {
+    case "resume":
+    window.open(resume);
+    break;
+    case "linkedin":
+    window.open(linkedin);
+    break;
+    default: break;
+  }
+}
+
 
 function changeTheme() {
 
-  if (themeBlack) {
-    let white = '#fff'
-
-    document.getElementById("body").style.color = "#333333"
-    document.getElementById("body").style.backgroundColor = "#e2e1e0"
-
-    document.getElementById("container").style.backgroundColor = white
-    document.getElementById('logo').src = "drawables/logo-b.png"
-    document.getElementById('profile-picture').style.borderColor = "#333333"
-    document.getElementById("text-box").style.backgroundColor = "#f0f0f0"
-
-    let cards = document.querySelectorAll(".mdc-card")
-    for (var i = 0; i < cards.length; i++) {
-        cards[i].style.backgroundColor = white
-        //cards[i].style.boxShadow = "0 2px 1px -1px rgba(#fff,.2), 0 1px 1px 0 rgba(#fff,.14), 0 1px 3px 0 rgba(#fff,.12)"
-    }
-
-    let box = document.querySelectorAll(".hobbies-box")
-    for (var i = 0; i < box.length; i++) {
-        box[i].style.backgroundColor = white
-        //box[i].style.boxShadow = "0 2px 1px -1px rgba(#fff,.2), 0 1px 1px 0 rgba(#fff,.14), 0 1px 3px 0 rgba(#fff,.12)"
-    }
-
-    document.getElementById("popup-content").style.backgroundColor = white
-    document.getElementById("card").style.backgroundColor = white
-    document.getElementById("go-up").style.color = 'gray'
-
-    themeBlack = 0;
+  if (theme.isBlack) {
+    goesWhite()
   }
   else {
-    document.getElementById("body").style.color = "#eee"
-    document.getElementById("body").style.backgroundColor = "#000"
-
-
-    document.getElementById("container").style.backgroundColor = "#444"
-    document.getElementById('logo').src = "drawables/logo-w.png"
-    document.getElementById('profile-picture').style.borderColor = "#eee"
-    document.getElementById("text-box").style.backgroundColor = "gray"
-
-    let cards = document.querySelectorAll(".mdc-card")
-    for (var i = 0; i < cards.length; i++) {
-        cards[i].style.backgroundColor = "gray"
-    }
-
-    let box = document.querySelectorAll(".hobbies-box")
-    for (var i = 0; i < box.length; i++) {
-        box[i].style.backgroundColor = "#444"
-        box[i].style.boxShadow = "0 2px 1px -1px rgba(#fff,.2), 0 1px 1px 0 rgba(#fff,.14), 0 1px 3px 0 rgba(#fff,.12)"
-    }
-
-    document.getElementById("popup-content").style.backgroundColor = "gray"
-    document.getElementById("card").style.backgroundColor = "darkgray"
-
-    themeBlack = 1;
+    goesBlack();
   }
 
+  function goesBlack() {
+    site.body.style.color = "#eee"
+    site.body.style.backgroundColor = "#000"
+    site.container.style.backgroundColor = "#444"
+    site.logo.src = "drawables/logo-w.png"
+    site.profilePicture.style.borderColor = "#eee"
+    site.textBox.style.backgroundColor = "gray"
+    site.popupContent.style.backgroundColor = "gray"
+    site.card.style.backgroundColor = "darkgray"
+
+    for (var i = 0; i < site.cards.length; i++) {
+      site.cards[i].style.backgroundColor = "gray"
+    }
+
+    for (var i = 0; i < site.box.length; i++) {
+      site.box[i].style.backgroundColor = "#444"
+    }
+
+    theme.isBlack = true;
+  }
+
+  function goesWhite() {
+    let white = '#fff'
+
+    site.body.style.color = "#333333"
+    site.body.style.backgroundColor = "#e2e1e0"
+    site.container.style.backgroundColor = white
+    site.logo.src = "drawables/logo-b.png"
+    site.profilePicture.style.borderColor = "#333333"
+    site.textBox.style.backgroundColor = "#f0f0f0"
+    site.popupContent.style.backgroundColor = white
+    site.card.style.backgroundColor = white
+    site.goUp.style.color = 'gray'
+
+    for (var i = 0; i < site.cards.length; i++) {
+      site.cards[i].style.backgroundColor = white
+    }
+
+    for (var i = 0; i < site.box.length; i++) {
+      site.box[i].style.backgroundColor = white
+    }
+
+    theme.isBlack = false;
+  }
 }

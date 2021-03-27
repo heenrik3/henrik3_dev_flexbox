@@ -38,6 +38,7 @@ html {
 body {
   box-sizing: border-box;
   background-color: #e2e1e0;
+  animation: moveInTop 2s;
 }
 
 body {
@@ -113,10 +114,6 @@ body {
   color: transparent;
 }
 
-.legal {
-  text-align: center;
-}
-
 .go-up {
   padding: 1rem;
   text-decoration: none;
@@ -154,7 +151,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 0.5rem;
+  grid-gap: 2rem;
 }
 .hobbies-box {
   padding: 2rem;
@@ -338,7 +335,7 @@ body {
 }
 
 .popup {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -469,69 +466,6 @@ body {
   cursor: pointer;
 }
 
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 30px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 22px;
-  width: 22px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
 .header {
   width: 100%;
   margin-bottom: 15em;
@@ -563,13 +497,13 @@ input:checked + .slider:before {
 .header__menu-box__theme-chooser {
   font-size: 3rem;
   border-radius: 50%;
-  transition: background-color 0.3s, transform 1s;
+  transition: background-color 0.3s, transform 0.5s;
 }
 .header__menu-box__theme-chooser:hover {
-  background-color: lightgray;
+  transform: rotate(90deg);
 }
 .header__menu-box__theme-chooser:active {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 
 .main {
